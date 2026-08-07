@@ -46,6 +46,10 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	env1=EnvGen.ar(Env.perc(env1att,env1rel),doneAction:2);
 	env3=EnvGen.ar(Env.perc(env3att,env3rel),doneAction:2);
 
+//free the synth
+	FreeSelf.kr(Done.kr(env1) * Done.kr(env3));
+
+
 	sound=Limiter.ar(((osc1*env1)+(osc6*env3))*amp);
 
 	sound=Splay.ar(sound,splay,1,0.0);
