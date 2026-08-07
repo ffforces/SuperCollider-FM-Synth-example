@@ -13,7 +13,6 @@
 
 //free buffers if you have buffers evaluated: Buffer.freeAll;
 
-// first evaluate this
 
 b = Buffer.alloc(s, 1);
 
