@@ -61,7 +61,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 
 
 
-//basic pattern with every paramater as 1
+//basic pattern with every parameter as 1
 
 
 (
@@ -92,7 +92,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	\env3rel,1,
 
 
-	\amp, 0.5,
+	\amp, 0.3,
 
 );
 );
@@ -106,7 +106,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 
 
 
-//not very interestin so more modulations
+//not very interesting so more modulations
 
 
 
@@ -116,7 +116,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 ~pat=Pdef(\a,
 	Pbind(
 	\instrument,\fm,
-	\dur, 3,
+	\dur, 0.3,
 	\freq, Pseq([30,35,37,49],inf).midicps,
 
 	\splay, Prand([0.9,0.4,0.5,0.6,0.7,0.1,0],inf),
@@ -140,7 +140,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	\index5,Pwhite(3.0,5.0,inf),
 
 
-	\amp, 0.5,
+	\amp, 0.3,
 
 );
 );
@@ -176,7 +176,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	\env2att,0.007,
 	\env1rel,Prand([1,1.5,3],inf),
 	\env3att,0.07,
-	\env3rel,Prand([1,1.5,3],inf)*0.05,
+	\env3rel,Prand([1,1.5,3],inf)*0.25,
 
 	\index2,Pwhite(0.3,5.0, inf),
 	\index3,Pwhite(3.0,2.0,inf),
@@ -184,7 +184,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	\index5,Pwhite(1.0,5.0,inf),
 
 
-	\amp, 0.5,
+	\amp, 0.3,
 
 );
 );
@@ -229,7 +229,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	\index5,Prand([1,3,5],inf),
 
 
-	\amp, 0.5,
+	\amp, 0.3,
 
 );
 );
@@ -251,15 +251,15 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	Pbind(
 	\instrument,\fm,
 		\dur, 1,
-	\freq, 20.midicps,
+	\freq, 50.midicps,
 
 	\splay, 0.91,
 
-	\ratio1,5,
-	\ratio2,2,
+	\ratio1,0.5,
+	\ratio2,0.2,
 	\ratio3,3,
 	\ratio4,4,
-	\ratio5,5,
+	\ratio5,0.5,
 	\ratio6,6,
 	\env1att,2,
 	\env1rel,3,
@@ -351,7 +351,7 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 	\ratio5,2,
 	\splay, 1,
 
-	\index2,Prand([6,7,10],inf),
+	\index2,Prand([6,7,10],inf)+20,
 	\index3,3,
 	\index4,5,
 	\index5,2,
@@ -376,13 +376,6 @@ SynthDef(\fm,{ arg amp=0.8,freq=20,splay=0.4, index2, index3, index4, index5, in
 
 ~patPlay=~pat.play;
 ~patPlay.stop;
-
-
-
-
-
-
-
 
 
 
