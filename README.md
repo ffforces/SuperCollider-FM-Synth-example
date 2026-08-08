@@ -4,6 +4,7 @@ It's possible that the single sample feedback system is not implemented right (i
 
 I was using this recently on my new record 'Permutations' released by Biodiversità Records (https://biodiversitarecords.bandcamp.com/album/permutations).
 
-I will make an YouTube explaining the code more in detail. 
+YouTube video about the code:
+https://www.youtube.com/watch?v=SnkOAMBq_Lk
 
 There is of course already the ready-made FM7.ar (https://doc.sccode.org/Classes/FM7.html) but I wanted to do my own version.
