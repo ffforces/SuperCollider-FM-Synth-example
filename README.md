@@ -1,4 +1,4 @@
-DX7 inspired SuperCollider 6 operator FM synthesis example with single sample feedback.
+DX7 inspired SuperCollider 6 operator FM synthesis.
 
 It's possible that the single sample feedback system is not implemented right (in the DSP sense), but at least it makes nice noises:)
 
