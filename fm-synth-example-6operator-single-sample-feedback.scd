@@ -9,11 +9,10 @@
 //fm example
 
 
-//important evaluate this buffer for a single sample feedback possibility
 
 //free buffers if you have buffers evaluated: Buffer.freeAll;
 
-
+// the blockSize still has an effect so this synthesis is not single sample feedback but it still makes nice noises
 b = Buffer.alloc(s, 1);
 
 // this is inspired by algorithm #2 of yamaha dx 7
